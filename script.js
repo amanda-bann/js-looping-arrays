@@ -26,3 +26,12 @@ for (var language of programmingLanguages) {
 programmingLanguages.forEach(function(item, index) {
   console.log(`${index +1}. ${item}`);
 });
+
+// Filter Elements by a String //
+// Create updatedLanguages variable using filter() and then includes() in the callback function
+var updatedLanguages = programmingLanguages.filter(function (language) {
+  return language.includes("y");
+});
+
+// Log out updatedLanguages
+console.log(updatedLanguages);
