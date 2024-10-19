@@ -12,7 +12,7 @@ var programmingLanguages = [
   "C#"
 ];
 
-// Output Strings witha a for...of Loop //
+// Output Strings with a for...of Loop //
 // Log out array
 console.log(programmingLanguages);
 
@@ -20,3 +20,9 @@ console.log(programmingLanguages);
 for (var language of programmingLanguages) {
   console.log(`I can't wait to learn ${language}!`);
 }
+
+// Create a Numbered List with forEach() //
+// Use forEach() to loop throught the elements and indexes of the array
+programmingLanguages.forEach(function(item, index) {
+  console.log(`${index +1}. ${item}`);
+});
